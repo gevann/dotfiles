@@ -13,7 +13,7 @@
 vendor/bundle
 vim/.vim/bundle/*
 *.local
-!vim/.vim/bundle/Vundle.vim
+vim/.vim/bundle/Vundle.vim
 bundler/.bundle/cache
 bundler/.bundle/cache/*
 aws/.aws/credentials
