@@ -1,0 +1,25 @@
+[user]
+  name = Graeme Nathan
+  email = graemenathan@gmail.com
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[core]
+  editor = vim
+  excludesfile = /home/graeme/.gitignore.global
+[color]
+  ui = true
+[branch]
+  autosetuprebase = always
+[push]
+  default = simple
+[credential]
+  helper = cache --timeout=3600
+[merge]
+  tool = vimdiff
+[pager]
+  branch = false
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
