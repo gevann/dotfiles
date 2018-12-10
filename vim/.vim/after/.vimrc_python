@@ -1,0 +1,17 @@
+python << endpython
+
+import vim
+from os import path
+def other_file():
+  return vim.eval("system(\"rg . --files -g '' | fzy \")")
+
+def relpath():
+  target = other_file()
+  if target == '':
+    vim.command("redraw!")
+    return
+  relative_path = path.relpath(target, path.dirname(vim.current.buffer.name)).strip()
+  vim.command("redraw!")
+  vim.command("normal! a'%s'"%relative_path)
+
+endpython
