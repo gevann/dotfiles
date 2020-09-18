@@ -3,8 +3,6 @@ export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 #ZSH_THEME='ys'
 
-plugins=(git vi-mode zsh-syntax-highlighting)
-
 source $ZSH/oh-my-zsh.sh
 
 # VCS
@@ -73,3 +71,5 @@ serve() {
   port="${1:-3000}"
   ruby -run -e httpd . -p $port
 }
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
