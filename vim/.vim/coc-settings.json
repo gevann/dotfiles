@@ -1,0 +1,13 @@
+{
+  "solargraph.useBundler": true,
+  "solargraph.hover": true,
+  "solargraph.definitions": true,
+  "solargraph.references": true,
+  "languageserver": {
+    "metals": {
+      "command": "metals-vim",
+      "rootPatterns": ["build.sbt"],
+      "filetypes": ["scala", "sbt"]
+    }
+  }
+}
